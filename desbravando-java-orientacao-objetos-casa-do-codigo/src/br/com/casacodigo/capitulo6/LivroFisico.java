@@ -1,6 +1,6 @@
-package br.com.casacodigo.capitulo5;
+package br.com.casacodigo.capitulo6;
 
-public class LivroFisico extends Livro{
+public class LivroFisico extends Livro implements Promocional{
 	
 	public LivroFisico(Autor autor) {
 		super(autor);

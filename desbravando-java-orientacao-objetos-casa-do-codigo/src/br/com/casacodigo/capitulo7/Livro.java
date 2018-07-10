@@ -1,4 +1,4 @@
-package br.com.casacodigo.capitulo5;
+package br.com.casacodigo.capitulo7;
 
 
 /**
@@ -7,7 +7,7 @@ package br.com.casacodigo.capitulo5;
  * @author pinhe
  *
  */
-public abstract class Livro {
+public abstract class Livro implements Produto{
 	
 	private String nome;
 	private String descricao;
@@ -42,7 +42,6 @@ public abstract class Livro {
 		
 	}
 	
-	public abstract boolean aplicaDescontoDe(double porcentagem);
 	
 	
 	boolean temAutor() {

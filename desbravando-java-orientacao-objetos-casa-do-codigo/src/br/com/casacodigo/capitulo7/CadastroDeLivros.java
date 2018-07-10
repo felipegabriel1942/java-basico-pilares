@@ -1,4 +1,4 @@
-package br.com.casacodigo.capitulo5;
+package br.com.casacodigo.capitulo7;
 
 /**
  * Esse pacote mostra a utilização de metodo
