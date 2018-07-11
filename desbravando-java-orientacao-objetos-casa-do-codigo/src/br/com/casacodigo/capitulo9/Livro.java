@@ -1,4 +1,4 @@
-package br.com.casacodigo.capitulo7;
+package br.com.casacodigo.capitulo9;
 
 
 /**
@@ -46,7 +46,18 @@ public abstract class Livro implements Produto{
 		
 	}
 	
-	
+	@Override
+	public int compareTo(Produto outro) {
+		
+		if(this.getValor() < outro.getValor()) {
+			return -1;
+		}
+		
+		if(this.getValor() > outro.getValor()) {
+			return 1;
+		}
+		return 0;
+	}
 	
 	boolean temAutor() {
 		return this.autor != null;

@@ -1,5 +1,6 @@
-package br.com.casacodigo.capitulo7;
+package br.com.casacodigo.capitulo9;
 
+import java.util.List;
 
 public class RegistroDeVendas {
 
@@ -19,23 +20,16 @@ public class RegistroDeVendas {
 		ebook.setNome("Test-Driven Development");
 		ebook.setValor(29.90);
 		
-		CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
+		CarrinhoDeCompras carrinho = new CarrinhoDeCompras(new Produto[10]);
 		carrinho.adiciona(fisico);
 		carrinho.adiciona(ebook);
 		
 		System.out.println("Total " + carrinho.getTotal());
 		
-		Produto[] produtos = carrinho.getProdutos();
+		List<Produto> produtos = carrinho.getProdutos();
 		
-		for (int i = 0; i < produtos.length; i++) {
-			try {
-				Produto produto = produtos[i];
-				if(produto != null) {
-					System.out.println(produto.getValor());
-				}
-			} catch (ArrayIndexOutOfBoundsException e) {
-				System.out.println("deu exception no indice: " + i);
-			}
+		for(Produto produto : produtos) {
+			System.out.println(produto);
 		}
 		
 		System.out.println("Fui executado!");

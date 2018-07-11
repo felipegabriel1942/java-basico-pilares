@@ -1,4 +1,4 @@
-package br.com.casacodigo.capitulo7;
+package br.com.casacodigo.capitulo8;
 
 
 public class RegistroDeVendas {
